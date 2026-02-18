@@ -1,0 +1,655 @@
+
+
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Untree.co">
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="favicon.png">
+
+<!-- Google Fonts -->
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/font-system.css">
+
+
+<!-- Bootstrap (HER ZAMAN İLK) -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<!-- Plugin CSS -->
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+<link rel="stylesheet" href="css/daterangepicker.css">
+<link rel="stylesheet" href="css/aos.css">
+
+<!-- Icon Fonts -->
+<link rel="stylesheet" href="fonts/icomoon/style.css">
+<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- favicon -->
+	<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+
+<!-- TEMPLATE ANA STYLE (EN SON!) -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<style>
+	
+/* =====================================
+   GLOBAL FIX
+===================================== */
+
+html, body {
+  overflow-x: hidden;
+}
+
+/* =====================================
+   NAVBAR TEMEL
+===================================== */
+
+.site-navigation {
+  display: flex;
+  align-items: center;
+  padding: 15px 0; /* gerçek yükseklik burada oluşur */
+}
+
+/* Sticky aktifken sabit dursun */
+.sticky-nav {
+  width: 100%;
+}
+
+/* =====================================
+   LOGO
+===================================== */
+
+.site-logo img {
+  height: 80px;
+  width: auto;
+  transition: height 0.3s ease;
+}
+
+.sticky-nav .site-logo img {
+  height: 45px;
+}
+
+/* =====================================
+   DESKTOP MENU
+===================================== */
+
+.site-menu {
+  display: flex;
+  align-items: center;
+}
+
+.site-menu > li > a {
+  font-size: 14px;
+  padding: 10px 12px;
+  white-space: nowrap;
+}
+
+/* =====================================
+   SOSYAL
+===================================== */
+
+.header-social i {
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.header-social a {
+  margin-left: 12px;
+  font-size: 18px;
+  color: #333;
+}
+
+.header-social a:hover i {
+  color: #d4a017;
+}
+
+/* =====================================
+   MOBİL
+===================================== */
+
+@media (max-width: 991px) {
+
+  /* Navbar padding azalt */
+  .site-navigation {
+    padding: 10px 0;
+  }
+
+  /* Desktop yatay menüyü sadece navbar içinde gizle */
+  .site-navigation > .nav-right > .site-menu {
+    display: none !important;
+  }
+
+  .site-navigation .header-social {
+    display: none !important;
+  }
+
+  .site-logo img {
+    height: 45px;
+  }
+
+}
+
+		
+	
+/* Owl Carousel – ok yönlerini düzeltme */
+
+.owl-carousel .owl-nav button span {
+  display: none; /* prev / next yazısını gizle */
+}
+
+/* PREV = SOLA GİDER → SOL OK GÖSTERMELİ */
+.owl-carousel .owl-nav .owl-prev::after {
+  content: "‹";
+  font-size: 28px;
+}
+
+/* NEXT = SAĞA GİDER → SAĞ OK GÖSTERMELİ */
+.owl-carousel .owl-nav .owl-next::after {
+  content: "›";
+  font-size: 28px;
+}
+
+/* Güvenlik: transform tersliklerini iptal et */
+.owl-carousel .owl-nav button {
+  transform: none !important;
+  background: none !important;
+}
+
+
+</style>
+
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+<nav class="site-nav">
+  <div class="container">
+    
+     
+<div class="site-navigation d-flex align-items-center">
+
+  <!-- Logo -->
+  <a href="index.html" class="site-logo">
+    <img src="images/logo.png" alt="Site Logo">
+  </a>
+
+  <!-- SAĞ BLOK -->
+  <div class="nav-right d-flex align-items-center ml-auto">
+
+    <!-- Menü -->
+    <ul class="js-clone-nav site-menu mb-0">
+  <li><a href="index.html">ANA SAYFA</a></li>
+  <li><a href="about.html">HAKKIMIZDA</a></li>
+  <li><a href="galeri.html">HİZMET GALERİSİ</a></li>
+  <li><a href="blog.html">BLOG</a></li>
+  <li class="active"><a href="iletisim.html">İLETİŞİM</a></li>
+</ul>
+
+    <!-- Sosyal ikonlar -->
+        <div class="header-social d-none d-lg-flex ml-4">
+          <a href="https://www.instagram.com/stasilahtamiratolyesi" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/@stasilah" target="_blank">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+    <!-- Hamburger -->
+    <a href="#" class="burger d-inline-block d-lg-none site-menu-toggle js-menu-toggle">
+      <span></span>
+    </a>
+
+  </div>
+</div>
+
+	</div>
+	</nav>
+
+
+  <div class="hero hero-inner">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mx-auto text-center">
+          <div class="intro-wrap">
+            <h1 class="mb-0">Gerçekleşen Projeler</h1><br><br>
+            <p class="text-white">Gerçekleştirdiğimiz onarım ve bakım çalışmalarından birkaç örneği galerimizde görebilirsiniz. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   
+
+	<div class="untree_co-section">
+		<div class="container">
+			<div class="row text-center justify-content-center mb-5">
+				<div class="col-lg-7">
+			</div>
+
+			<div class="owl-carousel owl-3-slider">
+
+				<div class="item">
+					<a class="media-thumb" href="images/hero-slider-1.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3></h3>
+							<span class="location"></span>
+						</div>
+						<img src="images/hero-slider-1.jpg" alt="Image" class="img-fluid">
+					</a> 
+				</div>
+
+				
+				
+
+				<div class="item">
+					<a class="media-thumb" href="images/hero-slider-2.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3></h3>
+							<span class="location"></span>
+						</div>
+						<img src="images/hero-slider-2.jpg" alt="Image" class="img-fluid">
+					</a> 
+				</div>
+
+				
+<div class="item">
+					<a class="media-thumb" href="images/hero-slider-3.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3></h3>
+							<span class="location"></span>
+						</div>
+						<img src="images/hero-slider-3.jpg" alt="Image" class="img-fluid">
+					</a> 
+				</div>
+								
+<div class="item">
+					<a class="media-thumb" href="images/hero-slider-4.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3></h3>
+							<span class="location"></span>
+						</div>
+						<img src="images/hero-slider-4.jpg" alt="Image" class="img-fluid">
+					</a> 
+				</div>
+									
+<div class="item">
+					<a class="media-thumb" href="images/hero-slider-5.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3></h3>
+							<span class="location"></span>
+						</div>
+						<img src="images/hero-slider-5.jpg" alt="Image" class="img-fluid">
+					</a> 
+				</div>
+													
+<div class="item">
+					<a class="media-thumb" href="images/hero-slider-6.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3></h3>
+							<span class="location"></span>
+						</div>
+						<img src="images/hero-slider-6.jpg" alt="Image" class="img-fluid">
+					</a> 
+				</div>
+																
+<div class="item">
+					<a class="media-thumb" href="images/hero-slider-7.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3></h3>
+							<span class="location"></span>
+						</div>
+						<img src="images/hero-slider-7.jpg" alt="Image" class="img-fluid">
+					</a> 
+				</div>
+																				
+<div class="item">
+					<a class="media-thumb" href="images/hero-slider-8.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3></h3>
+							<span class="location"></span>
+						</div>
+						<img src="images/hero-slider-8.jpg" alt="Image" class="img-fluid">
+					</a> 
+				</div>
+				<div class="item">
+					<a class="media-thumb" href="images/hero-slider-9.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3></h3>
+							<span class="location"></span>
+						</div>
+						<img src="images/hero-slider-9.jpg" alt="Image" class="img-fluid">
+					</a> 
+				</div>
+				<div class="item">
+					<a class="media-thumb" href="images/hero-slider-10.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3></h3>
+							<span class="location"></span>
+						</div>
+						<img src="images/hero-slider-10.jpg" alt="Image" class="img-fluid">
+					</a> 
+				</div>
+				
+<div class="item">
+					<a class="media-thumb" href="images/hero-slider-11.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3></h3>
+							<span class="location"></span>
+						</div>
+						<img src="images/hero-slider-11.jpg" alt="Image" class="img-fluid">
+					</a> 
+				</div>
+		<div class="item">
+					<a class="media-thumb" href="images/hero-slider-12.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3></h3>
+							<span class="location"></span>
+						</div>
+						<img src="images/hero-slider-12.jpg" alt="Image" class="img-fluid">
+					</a> 
+				</div>
+	<div class="item">
+					<a class="media-thumb" href="images/hero-slider-13.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3></h3>
+							<span class="location"></span>
+						</div>
+						<img src="images/hero-slider-13.jpg" alt="Image" class="img-fluid">
+					</a> 
+				</div>
+	<div class="item">
+					<a class="media-thumb" href="images/hero-slider-14.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3></h3>
+							<span class="location"></span>
+						</div>
+						<img src="images/hero-slider-14.jpg" alt="Image" class="img-fluid">
+					</a> 
+				</div>
+	<div class="item">
+					<a class="media-thumb" href="images/hero-slider-15.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3></h3>
+							<span class="location"></span>
+						</div>
+						<img src="images/hero-slider-15.jpg" alt="Image" class="img-fluid">
+					</a> 
+				</div>
+	<div class="item">
+					<a class="media-thumb" href="images/hero-slider-16.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3></h3>
+							<span class="location"></span>
+						</div>
+						<img src="images/hero-slider-16.jpg" alt="Image" class="img-fluid">
+					</a> 
+				</div>
+	<div class="item">
+					<a class="media-thumb" href="images/hero-slider-17.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3></h3>
+							<span class="location"></span>
+						</div>
+						<img src="images/hero-slider-17.jpg" alt="Image" class="img-fluid">
+					</a> 
+				</div>
+	<div class="item">
+					<a class="media-thumb" href="images/hero-slider-18.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3></h3>
+							<span class="location"></span>
+						</div>
+						<img src="images/hero-slider-18.jpg" alt="Image" class="img-fluid">
+					</a> 
+				</div>
+	<div class="item">
+					<a class="media-thumb" href="images/hero-slider-19.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3></h3>
+							<span class="location"></span>
+						</div>
+						<img src="images/hero-slider-19.jpg" alt="Image" class="img-fluid">
+					</a> 
+				</div>
+	<div class="item">
+					<a class="media-thumb" href="images/hero-slider-20.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3></h3>
+							<span class="location"></span>
+						</div>
+						<img src="images/hero-slider-20.jpg" alt="Image" class="img-fluid">
+					</a> 
+				</div>
+	
+			</div>
+
+		</div>
+	</div>
+  <div class="untree_co-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-md-6 col-lg-3">
+          <div class="service text-center">
+            <span class="icon-magic"></span>
+            <h3>Profesyonel Bakım & Tamir</h3>
+            <p>Silahlarınızın bakım ve onarımı titizlikle gerçekleşiyor.</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-6 col-lg-3">
+          <div class="service text-center">
+            <span class="icon-table"></span>
+            <h3>Hassas İşçilik</h3>
+            <p>Silah modifikasyon ve bakım onarım işlemleri sıfır hata prensibi ve incelikli çalışmalarla sonuçlandırılıyor. </p>
+          </div>
+        </div>
+        <div class="col-6 col-md-6 col-lg-3">
+          <div class="service text-center">
+            <span class="icon-history"></span>
+            <h3>Değer Koruması</h3>
+            <p>Ürününüzün tarihsel değeri gözetilerek ve orijinaline sadık kalınarak bakım, onarım ve kişiselleştirme işlemleri yapılıyor.</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-6 col-lg-3">
+          <div class="service text-center">
+            <span class="icon-phone-square"></span>
+            <h3>Teknik Destek</h3>
+            <p>İşlem öncesi ve sonrası bilgi ve iletişim desteği tarafımızdan sağlanıyor.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="py-5 cta-fixed">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h2 class="section-title.sm mb-2">“Tüm Silah Bakım ve Kişiselleştirme Hizmetleri İçin”</h2>
+<p class="cta-sub mb-4">STA Silah Tamir Atölyesi Olarak Buradayız!</p>
+
+<p class="mb-0">
+  <a href="tel:+905333665482"
+   class="btn btn-outline-white text-white btn-md font-weight-bold">
+   Hemen Arayın
+</a>
+</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="site-footer">
+    <div class="inner first">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="widget">
+              <h3 class="heading">STA SİLAH TAMİR ATÖLYESİ</h3>
+              <p>STA Silah Tamir Atölyesi, bireysel ve kurumsal silah kullanıcıları için tamir, bakım ve modifikasyon hizmetleri veren, güvenlik ve performansı arttırıcı çözümler sunan bir kuruluştur.</p>
+            </div>
+            <div class="widget">
+              <ul class="list-unstyled social">
+    <li><a href="https://www.instagram.com/stasilahtamiratolyesi" target="_blank"><span class="icon-instagram"></span></a></li>
+    <li><a href="https://www.youtube.com/@stasilah" target="_blank"><span class="icon-youtube"></span></a></li>
+  </ul>
+</div>
+          </div>
+          <div class="col-md-6 col-lg-2 pl-lg-5">
+            <div class="widget">
+              <h3 class="heading">Kısa Yollar</h3>
+              <ul class="links list-unstyled">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="about.html">Hakkımızda</a></li>
+                <li><a href="galeri.html">Hizmet Galerisi</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2">
+            <div class="widget">
+              <h3 class="heading">Kısa Yollar</h3>
+              <ul class="links list-unstyled">
+                
+				  <li><a href="blog.html">Blog</a></li>
+				  <li><a href="iletisim.html">İletişim</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="widget">
+              <h3 class="heading">İletişim</h3>
+              <ul class="list-unstyled quick-info links">
+                <li class="email"><a href="mailto:silahtamiratolyesi@gmail.com">silahtamiratolyesi@gmail.com</a></li>
+                <li class="phone"><a href="tel:+905333665482">+90 533 366 54 82</a></li>
+                <li class="address"><a href="https://www.google.com/maps/search/?api=1&query=Kesikkapi+mh+111+sk+7/E+Fethiye+Muğla+Türkiye" target="_blank">Kesikkapi mh 111 sk 7/E Fethiye/ Muğla, Türkiye</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+    <div class="inner dark">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-8 mb-3 mb-md-0 mx-auto">
+            <p>Copyright &copy;<script>Site(new Date().getFullYear());</script> Tüm hakları saklıdır &mdash; Designed with love by<span> <span class="icon-heart"></span> <a href="https://buniforma.com" class="link-highlight">Buniforma Kreatif Hizmetler</a></span> <!-- License information: https://untree.co/license/ --> <a href="https://buniforma.com" target="_blank" ></a>
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  
+
+    
+
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/moment.min.js"></script>
+  <script src="js/daterangepicker.js"></script>
+
+  <script src="js/typed.js"></script>
+  
+  <script src="js/custom.js"></script>
+	
+
+	
+	
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  console.log('burger js çalıştı');
+
+  const burger = document.getElementById('burger-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  if (!burger || !mobileMenu) return; // ekstra güvenlik
+
+  burger.addEventListener('click', function (e) {
+    e.stopPropagation();
+    mobileMenu.classList.toggle('show');
+  });
+
+  document.addEventListener('click', function (e) {
+    if (!mobileMenu.contains(e.target) && !burger.contains(e.target)) {
+      mobileMenu.classList.remove('show');
+    }
+  });
+
+});
+</script>
+	
+
+	<script>
+	$(document).ready(function () {
+  $('.site-mobile-menu-body').append(`
+    <div class="mobile-social">
+      <a href="https://www.instagram.com/stasilahtamiratolyesi" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.youtube.com/@stasilah" target="_blank">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
+  `);
+});
+		$(document).ready(function () {
+
+  // Mobil menü açıldığında sosyal ikonları EN ALTA taşı
+  $(document).on('click', '.js-menu-toggle', function () {
+    setTimeout(function () {
+      $('.mobile-social')
+        .appendTo('.site-mobile-menu-body')
+        .show();
+    }, 50);
+  });
+
+});
+
+</script>
+
+
+</body></html>

@@ -1,5 +1,4 @@
 
-
 <!doctype html>
 <html lang="tr">
 <head>
@@ -47,14 +46,13 @@
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 <link rel="stylesheet" href="css/owl.theme.default.min.css">
 <link rel="stylesheet" href="css/style.css">
-
-  <title>Silah tamir atölyesi</title>
 </head>
+
+<body>
+
 
 <style>
 	
-
-
 /* =====================================
    GLOBAL FIX
 ===================================== */
@@ -152,18 +150,63 @@ html, body {
 
 }
 
+
+		
+	/* Form alanları ve label */
+/* Label ve input yazısı */
+.contact-form label {
+  color: #000 !important;       /* label siyah */
+  font-weight: 500;
+}
+
+.contact-form .form-control {
+  color: #000 !important;       /* input yazısı siyah */
+  background-color: #fff !important; /* input zemin beyaz */
+  border: 1px solid #ccc !important;
+  border-radius: 6px;
+  padding: 10px 12px;
+}
+
+/* Placeholder */
+.contact-form .form-control::placeholder {
+  color: #888 !important;
+}
+
+/* Focus efekti */
+.contact-form .form-control:focus {
+  border-color: #b0855b !important; /* tema rengi */
+  box-shadow: 0 0 5px rgba(176,133,91,0.3) !important;
+  outline: none;
+}
+
+/* Textarea */
+.contact-form textarea.form-control {
+  resize: vertical;
+}
+
+/* Gönder butonu */
+.contact-form .btn {
+  background-color: #b0855b !important;
+  border: none !important;
+  color: #fff !important;
+  padding: 10px 25px !important;
+  border-radius: 6px !important;
+  transition: background-color 0.3s;
+}
+
+.contact-form .btn:hover {
+  background-color: #a06e4d !important;
+}
+
+.contact-form .form-control {
+  color: #000 !important;       /* yazı siyah */
+  background-color: #fff !important;
+  border: 1px solid #ccc !important;
+  border-radius: 6px;
+  padding: 10px 12px;
+}
+
 </style>
-
-
-
-
-
-
-
-
-
-
-<body>
 
   <div class="site-mobile-menu site-navbar-target">
     <div class="site-mobile-menu-header">
@@ -190,11 +233,11 @@ html, body {
 
     <!-- Menü -->
     <ul class="js-clone-nav site-menu mb-0">
-  <li class="active"><a href="index.html">ANA SAYFA</a></li>
+  <li><a href="index.html">ANA SAYFA</a></li>
   <li><a href="about.html">HAKKIMIZDA</a></li>
   <li><a href="galeri.html">HİZMET GALERİSİ</a></li>
   <li><a href="blog.html">BLOG</a></li>
-  <li><a href="iletisim.html">İLETİŞİM</a></li>
+  <li class="active"><a href="iletisim.html">İLETİŞİM</a></li>
 </ul>
 
     <!-- Sosyal ikonlar -->
@@ -206,7 +249,6 @@ html, body {
             <i class="fab fa-youtube"></i>
           </a>
         </div>
-
     <!-- Hamburger -->
     <a href="#" class="burger d-inline-block d-lg-none site-menu-toggle js-menu-toggle">
       <span></span>
@@ -218,168 +260,141 @@ html, body {
 	</div>
 	</nav>
 
-<!-- HERO -->
-<div class="hero" style="padding-top:20px;">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-7">
-        <div class="intro-wrap">
-          <h1 class="mb-5">
-            <span class="d-block">Silahlarınıza…</span>
-            <span class="typed-words"></span>
-          </h1>
-        </div>
-      </div>
-      <div class="col-lg-5">
-        <div class="slides video-slide">
-          <video id="heroVideo" src="videos/video1.mp4" autoplay muted loop playsinline></video>
+
+
+  <div class="hero hero-inner">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mx-auto text-center">
+          <div class="intro-wrap">
+            <h1 class="mb-0">Bize Ulaşın</h1>
+            <p class="text-white">Silah tamiri ve benzer tüm konularda size bir tık uzaklıktayız </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
+  
+  
+  <div class="untree_co-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <form class="contact-form" data-aos="fade-up" data-aos-delay="200">
+            <div class="row">
+              <div class="col-6">
+                <div class="form-group">
+  <label for="fname">Adınız</label>
+  <input type="text" class="form-control" id="fname" placeholder="Adınız">
 </div>
-	<style>
-	/* HERO STICKY OFFSET */
-.hero {
-  margin-top: 90px;   /* Desktop navbar yüksekliği kadar */
-}
-
-@media (max-width: 991px) {
-  .hero {
-    margin-top: 70px;   /* Mobil navbar yüksekliği kadar */
-  }
-}
-	</style>
-  <script>
-          document.addEventListener('DOMContentLoaded', function () {
-            const video = document.getElementById('heroVideo');
-            function enableSound() {
-              video.muted = false;
-              video.play().catch(() => {});
-              document.removeEventListener('click', enableSound);
-              document.removeEventListener('touchstart', enableSound);
-            }
-            document.addEventListener('click', enableSound);
-            document.addEventListener('touchstart', enableSound);
-          });
-          </script>
-<script src="js/jquery.min.js"></script>
-
-
-
-
-
-
-
-	
-	<div class="py-5 cta-fixed">
-		<div class="container">
-			<div class="row text-center">
-				<div class="col-md-12">
-					
-						</div>
-			</div>
-		</div>
-		</div>
-	
-					<div class="untree_co-section">
-		<div class="container">
-			<div class="row mb-5 justify-content-center">
-				<div class="col-lg-6 text-center">
-					<h1 class="section-title text-left mb-4">Kurumsal</h1>
-					<p>
-Atölyemiz bireysel ve kurumsal silah kullanıcıları için tamir, bakım ve modifikasyon hizmetleri vermektedir. <p>
-STA, güvenlik ve performansı arttırıcı çözümler ve kişiselleştirme hizmetleri sunarak siz müşterilerimizin beklentilerini karşılayıcı çözümler sunmaktadır. <p>
-Atölyemiz, Emniyet Genel Müdürlüğü tarafından verilen “Silah Tamir ve İşletmecilik İzni” ruhsatına sahiptir.<p> Silah satışımız yoktur, yasa gereği ruhsatsız silahlara hizmet veremiyoruz.
- </p>
-				</p></p></p></div>
-			</div>
+				  </div>
+<div class="form-group">
+  <label for="lname">Soyadınız</label>
+  <input type="text" class="form-control" id="lname" placeholder="Soyadınız">
+</div>
 				</div>
-			</div>
-		
-	
-	
-	<div class="untree_co-section">
-		<div class="container">
-			<div class="row justify-content-between align-items-center">
-				<div class="col-lg-6">
-  <figure class="img-play-video">
+            <div class="form-group">
+              <label class="email" for="email">E-mail </label>
+              <input type="text" class="form-control" id="email" placeholder="email">
+            </div>
 
-    <video
-      src="videos/video2.mp4"
-      class="img-fluid rounded-20"
-      autoplay
-      muted
-      loop
-      playsinline
-      controls
-    ></video>
-
-  </figure>
+            <div class="form-group">
+  <label for="message">Mesajınız</label>
+  <textarea class="form-control" id="message" cols="30" rows="5" placeholder="Mesajınızı buraya yazın"></textarea>
 </div>
 
-				
-				<div class="col-lg-5">
-					<h2 class="section-title.sm text-left mb-4">
-  Neler Yapıyoruz?
-</h2>
-					<p>Silah Tamir Atölyesi, tabanca, tüfek ve bıçak gibi silahlarınızı; estetik, güvenlik, işlevsellik ve dayanıklılık anlamında geliştiriyor. Kültürümüzde önemli bir yere sahip olan silahlara özenli dokunuşlarla teknik destek ve kişiselleştirme olanağı sağlıyor.</p>
+            <button type="submit" class="btn btn-primary">Gönder</button>
+          </form>
+        </div>
+        <div class="col-lg-5 ml-auto">
 
-					<p class="mb-4">Bize ulaşarak silahlarınız ve diğer güvenlik ekipmanlarınız için teknik destek alabilirsiniz.</p>
+  <!-- Adres -->
+  <div class="quick-contact-item d-flex align-items-center mb-4">
+    <span class="flaticon-house"></span>
+    <address class="text">
+      <a href="https://www.google.com/maps/search/?api=1&query=Kesikkapi+mh+111+sk+7/E+Fethiye+Muğla+Türkiye" target="_blank">
+        Kesikkapi mh 111 sk 7/E Fethiye/ Muğla, Türkiye
+      </a>
+    </address>
+  </div>
 
-					<ul class="list-unstyled two-col clearfix">
-						<li>Krom kaplama</li>
-						<li>Cerakote kaplama</li>
-						<li>Lazer gravür ve logo</li>
-						<li>Sürgü ve gövde modifikasyonları</li>
-						<li>Bakım ve onarım</li>
-						
-					</ul>
+  <!-- Telefon -->
+  <div class="quick-contact-item d-flex align-items-center mb-4">
+    <span class="flaticon-phone-call"></span>
+    <address class="text">
+      <a href="tel:+905333665482">
+        +90 533 366 54 82
+      </a>
+    </address>
+  </div>
 
-					<p><a href="about.html" class="btn btn-primary">Detaylı Bilgi</a></p>
+  <!-- Mail -->
+  <div class="quick-contact-item d-flex align-items-center mb-4">
+    <span class="flaticon-mail"></span>
+    <address class="text">
+      <a href="mailto:silahtamiratolyesi@gmail.com">
+        silahtamiratolyesi@gmail.com
+      </a>
+    </address>
+  </div>
+			<div class="social-links">
 
-					
-				</div>
-			</div>
-		</div>
-	</div>
-		
-<style>
-	/* Neler Yapıyoruz? bölümü üstü ayarlama - desktop ve mobil uyumlu */
-@media (min-width: 992px) { /* desktop */
-  .untree_co-section:nth-of-type(2) .col-lg-5 {
-    margin-top: -110px; /* yaklaşık 2-3 cm yukarı kaydırır */
-  }
+  <a href="https://www.instagram.com/stasilahtamiratolyesi"
+     target="_blank"
+     class="social-item">
+    <span class="social-icon">
+      <i class="fab fa-instagram"></i>
+    </span>
+    <span class="social-text">Instagram</span>
+  </a>
+
+  <a href="https://www.youtube.com/@stasilah"
+     target="_blank"
+     class="social-item">
+    <span class="social-icon">
+      <i class="fab fa-youtube"></i>
+    </span>
+    <span class="social-text">YouTube</span>
+  </a>
+
+</div>
+
+
+</div>
+
+			
+        </div>
+      </div>
+    </div>
+  <style>
+.quick-contact-item span {
+  width: 64px;
+  height: 64px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  color: #fff;
+  margin-right: 20px;
+  flex-shrink: 0;
 }
 
-@media (max-width: 991px) { /* tablet ve mobil */
-  .untree_co-section:nth-of-type(2) .col-lg-5 {
-    margin-top: -20px; /* mobilde aşırı yukarı gitmesin */
-  }
+.quick-contact-item .text,
+.quick-contact-item .text a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
 }
 
-	/* Neler Yapıyoruz başlığını yukarı kaydır */
-.untree_co-section:nth-of-type(2) .col-lg-5 {
-    margin-top: -30px; /* 30px yukarı kaydır, istersen 50px de yapabilirsin */
+.quick-contact-item .text a:hover {
+  text-decoration: underline;
 }
 
-/* Sadece 1. ve 2. section arası boşluğu azalt */
-.untree_co-section:first-of-type {
-  margin-bottom: 10px !important;
-}
-.untree_co-section:first-of-type + .untree_co-section {
-  margin-top: 10px !important;
-}
-	/* 2. section row’sunu yukarı hizala */
-.untree_co-section:nth-of-type(2) .row {
-    align-items: flex-start; /* ortadan yukarıya hizala */
-}
-
-</style>
-
-	
-	
-	<div class="py-5 cta-fixed">
+  </style>
+<div class="py-5 cta-fixed">
 		<div class="container">
 			<div class="row text-center">
 				<div class="col-md-12">
@@ -396,7 +411,6 @@ Atölyemiz, Emniyet Genel Müdürlüğü tarafından verilen “Silah Tamir ve �
 			</div>
 		</div>
 	</div>
-
 
   <div class="site-footer">
     <div class="inner first">
@@ -471,46 +485,213 @@ Atölyemiz, Emniyet Genel Müdürlüğü tarafından verilen “Silah Tamir ve �
       <span class="sr-only">Loading...</span>
     </div>
   </div>
-	<script src="js/jquery-3.4.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.animateNumber.min.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/jquery.fancybox.min.js"></script>
-	<script src="js/aos.js"></script>
-	<script src="js/moment.min.js"></script>
-	<script src="js/daterangepicker.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/moment.min.js"></script>
+  <script src="js/daterangepicker.js"></script>
 
-	<script src="js/typed.js"></script>
-	<script>
-		$(function() {
-			var slides = $('.slides'),
-			images = slides.find('img');
+  <script src="js/typed.js"></script>
+  
+  <script src="js/custom.js"></script>
+	<style>
 
-			images.each(function(i) {
-				$(this).attr('data-id', i + 1);
-			})
+ .social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
-			var typed = new Typed('.typed-words', {
-				strings: ["Yetkin Bir Dokunuş..."," Profesyonel Bakım ve Onarım"," Üst Düzey Yenileme", " Silah Tamir Atölyesi", ],
-				typeSpeed: 80,
-				backSpeed: 80,
-				backDelay: 4000,
-				startDelay: 1000,
-				loop: true,
-				showCursor: true,
-				preStringTyped: (arrayPos, self) => {
-					arrayPos++;
-					console.log(arrayPos);
-					$('.slides img').removeClass('active');
-					$('.slides img[data-id="'+arrayPos+'"]').addClass('active');
-				}
+.social-links .social-icon {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border: 2px solid #f8f9fa;
+  border-radius: 50%;
+  margin-right: 20px;
+  position: relative;
+  color: #f8f9fa;
+}
 
-			});
-		})
-		
-	</script>
+.social-links .social-icon i {
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social-links .social-icon:hover {
+  background: #f8f9fa;
+  color: #000;
+}
+		.social-links .social-icon {
+  display: block;   /* ← inline-block yerine */
+}
+.social-links .social-icon {
+  display: block;
+  margin-bottom: 15px;
+}
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* her satır */
+.social-item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #f8f9fa;
+}
+
+/* daire ikon */
+.social-item .social-icon {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #f8f9fa;
+  border-radius: 50%;
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* ikon ortalama */
+.social-item .social-icon i {
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* yazı */
+.social-item .social-text {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+/* hover */
+.social-item:hover .social-icon {
+  background: #f8f9fa;
+  color: #000;
+}
+.header-social-desktop {
+  display: flex;
+  gap: 8px;
+  margin-left: 20px; /* menüden sadece bu kadar ayrılsın */
+}
+
+
+.header-social-desktop a {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 13px;
+}
+
+/
+/*/* ===== CTA SECTION ABSOLUTE FIX ===== */
+/* ===== CTA SECTION FINAL LOCK ===== */
+
+body .cta-section h2 {
+  font-size: 28px !important;
+  line-height: 1.3 !important;
+}
+
+body .cta-section p,
+body .cta-section p.lead {
+  font-size: 18px !important;
+  line-height: 1.6 !important;
+}
+
+body .cta-section a.btn {
+  font-size: 16px !important;
+}
+@media (max-width: 768px) {
+  .cta-section h2 {
+    font-size: 24px;
+  }
+
+  .cta-section p {
+    font-size: 16px;
+  }
+
+  .cta-section .btn {
+    font-size: 15px;
+    padding: 9px 22px;
+  }
+}
+@media (max-width: 768px) {
+  .cta-section h2 {
+    font-size: 24px;
+  }
+
+  .cta-section p {
+    font-size: 16px;
+  }
+
+  .cta-section .btn {
+    font-size: 15px;
+    padding: 9px 22px;
+  }
+}
+
+
+</style>
+
+
+</body>
+	
+	
+	<script src="js/jquery.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  console.log('burger js çalıştı');
+
+  const burger = document.getElementById('burger-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  if (!burger || !mobileMenu) return; // ekstra güvenlik
+
+  burger.addEventListener('click', function (e) {
+    e.stopPropagation();
+    mobileMenu.classList.toggle('show');
+  });
+
+  document.addEventListener('click', function (e) {
+    if (!mobileMenu.contains(e.target) && !burger.contains(e.target)) {
+      mobileMenu.classList.remove('show');
+    }
+  });
+
+});
+	
+	document.querySelector('.contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  console.log('Form verileri:', {
+    fname: document.getElementById('fname').value,
+    lname: document.getElementById('lname').value,
+    email: document.getElementById('email').value,
+    message: document.getElementById('message').value
+  });
+  alert('Form JS üzerinden test edildi!');
+});
+
+</script>
+
 	<script>
 	$(document).ready(function () {
   $('.site-mobile-menu-body').append(`
@@ -539,10 +720,5 @@ Atölyemiz, Emniyet Genel Müdürlüğü tarafından verilen “Silah Tamir ve �
 
 </script>
 
-	<script src="js/custom.js"></script>
-<style>
 
-</style>
-
-
-</body></html>
+</html>

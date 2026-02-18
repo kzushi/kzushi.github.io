@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* /* ===============================
+   FONT SYSTEM – GLOBAL
+   =============================== */
+
+/* Base font */
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #333;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #111;
+}
+
+/* Section titles */
+.section-title {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Small section titles (sm eklediğinler) */
+.section-title.sm {
+  font-size: 32px;
+}
+
+/* CTA headings */
+.cta-section h1,
+.cta-section h2 {
+  font-weight: 700;
+}
+
+/* Paragraphs */
+p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* Lead text */
+.lead {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* Buttons */
+.btn {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}

@@ -32,7 +32,12 @@
 <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-<!-- favicon -->
+<!-- TEMPLATE ANA STYLE (EN SON!) -->
+<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	
+	<!-- favicon -->
 	<link rel="icon" type="image/x-icon" href="/favicon.ico">
 
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -43,18 +48,38 @@
 
 <link rel="manifest" href="/site.webmanifest">
 
-<!-- TEMPLATE ANA STYLE (EN SON!) -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-<link rel="stylesheet" href="css/owl.theme.default.min.css">
-<link rel="stylesheet" href="css/style.css">
+
+<script src="js/owl.carousel.min.js"></script>
+	
+<script src="js/jquery-3.6.0.min.js"></script>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<script src="js/owl.carousel.min.js"></script>
+
+<script>
+  if ($.fn.owlCarousel) {
+    $('.owl-single').owlCarousel({
+      items: 1,
+      loop: true,
+      autoplay: true,
+      smartSpeed: 800,
+      dots: true,
+      nav: false
+    });
+  }
+	
+</script>
 
   <title>Silah tamir atölyesi</title>
 </head>
 
+<body>
+<body class="about-page">
+</body>
+	
 <style>
 	
-
-
 /* =====================================
    GLOBAL FIX
 ===================================== */
@@ -152,18 +177,24 @@ html, body {
 
 }
 
+/* NAV */
+	/* HTML ve body tam yükseklik */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sayfa wrapper */
+.page-wrapper {
+  min-height: 100vh; /* tüm ekran yüksekliği */
+  display: flex;
+  flex-direction: column;
+}
+
+	
+
 </style>
-
-
-
-
-
-
-
-
-
-
-<body>
 
   <div class="site-mobile-menu site-navbar-target">
     <div class="site-mobile-menu-header">
@@ -190,8 +221,8 @@ html, body {
 
     <!-- Menü -->
     <ul class="js-clone-nav site-menu mb-0">
-  <li class="active"><a href="index.html">ANA SAYFA</a></li>
-  <li><a href="about.html">HAKKIMIZDA</a></li>
+  <li><a href="index.html">ANA SAYFA</a></li>
+  <li class="active"><a href="about.html">HAKKIMIZDA</a></li>
   <li><a href="galeri.html">HİZMET GALERİSİ</a></li>
   <li><a href="blog.html">BLOG</a></li>
   <li><a href="iletisim.html">İLETİŞİM</a></li>
@@ -218,60 +249,157 @@ html, body {
 	</div>
 	</nav>
 
-<!-- HERO -->
-<div class="hero" style="padding-top:20px;">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-7">
-        <div class="intro-wrap">
-          <h1 class="mb-5">
-            <span class="d-block">Silahlarınıza…</span>
-            <span class="typed-words"></span>
-          </h1>
-        </div>
-      </div>
-      <div class="col-lg-5">
-        <div class="slides video-slide">
-          <video id="heroVideo" src="videos/video1.mp4" autoplay muted loop playsinline></video>
+
+  <div class="hero hero-inner">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mx-auto text-center">
+          <div class="intro-wrap">
+            <h1 class="mb-0">Hakkımızda</h1><br><br>
+            <p class="text-white">Silah Tamir Atölyesi, tabanca, tüfek, bıçak gibi silahlarınızı; estetik, güvenlik, işlevsellik ve dayanıklılık anlamında geliştiriyor.</p><br> 
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-	<style>
-	/* HERO STICKY OFFSET */
-.hero {
-  margin-top: 90px;   /* Desktop navbar yüksekliği kadar */
-}
 
-@media (max-width: 991px) {
-  .hero {
-    margin-top: 70px;   /* Mobil navbar yüksekliği kadar */
-  }
-}
-	</style>
-  <script>
-          document.addEventListener('DOMContentLoaded', function () {
-            const video = document.getElementById('heroVideo');
-            function enableSound() {
-              video.muted = false;
-              video.play().catch(() => {});
-              document.removeEventListener('click', enableSound);
-              document.removeEventListener('touchstart', enableSound);
-            }
-            document.addEventListener('click', enableSound);
-            document.addEventListener('touchstart', enableSound);
-          });
-          </script>
-<script src="js/jquery.min.js"></script>
-
-
-
-
-
-
+  
 
 	
+  <style>
+    /* Owl güvenli alan */
+    .owl-carousel {
+      width: 100%;
+      display: block;
+    }
+
+    .owl-carousel .owl-item img {
+      width: 100% !important;
+      height: auto !important;
+      display: block;
+      border-radius: 20px;
+    }
+
+    .owl-single {
+      width: 100%;
+      max-width: 100%;
+      overflow: hidden;
+    }
+
+    /* Video sadece video'yu etkiler */
+    .responsive-video {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      display: block;
+    }
+
+    /* Video çerçeve (bronz) */
+    .video-bronze-frame {
+      border: 2px solid #C89B6A;
+      box-shadow: 0 0 0 1px rgba(92,58,31,.4);
+    }
+  </style>
+
+
+
+<div class="untree_co-section">
+  <div class="container">
+    <div class="row align-items-start">
+
+      <!-- SLIDER -->
+      <div class="col-lg-6">
+        <div class="owl-single dots-absolute owl-carousel">
+          <img src="images/img_1.jpg" alt="" class="img-fluid rounded-20">
+          <img src="images/img_2.jpg" alt="" class="img-fluid rounded-20">
+          <img src="images/img_3.jpg" alt="" class="img-fluid rounded-20">
+          <img src="images/img_4.jpg" alt="" class="img-fluid rounded-20">
+        </div>
+      </div>
+
+      <!-- YAZI -->
+      <div class="col-lg-6 pl-lg-4">
+        <h2 class="section-title sm text-left mb-4">
+          Hizmetlerimiz
+        </h2>
+
+        <p>
+          Silah Tamir Atölyesi; tabanca, tüfek ve bıçaklarınızı estetik, güvenlik,
+          işlevsellik ve dayanıklılık açısından profesyonel şekilde geliştirir.
+        </p>
+
+        <div class="service-item">
+          <h5>Krom Kaplama</h5>
+          <p>
+            Çelik yüzeylerde sertlik ve korozyon direnci sağlayarak silahınızın
+            ömrünü uzatır ve şık bir görünüm kazandırır.
+          </p>
+        </div>
+
+        <div class="service-item">
+          <h5>Cerakote Kaplama</h5>
+          <p>
+            Aşınma, çizilme ve paslanmaya karşı yüksek direnç sağlar. Renk ve
+            desen seçenekleriyle silahınızı kişiselleştirebilirsiniz.
+          </p>
+        </div>
+
+        <div class="service-item">
+          <h5>Sürgü ve Gövde Modifikasyonları</h5>
+          <p>
+            Hafifletme, soğutma ve kavrama iyileştirmeleriyle performans ve
+            estetik artırılır.
+          </p>
+        </div>
+
+        <div class="service-item">
+          <h5>Lazer Gravür & Logo</h5>
+          <p>
+            Silahınıza özel motif ve logo uygulamaları yapılır.
+          </p>
+        </div>
+
+        <div class="service-item">
+          <h5>Bakım & Onarım</h5>
+          <p>
+            Yıllık ve periyodik bakımlar profesyonel şekilde yapılmaktadır.
+          </p>
+        </div>
+
+        <p>
+          <a href="tel:+905333665482" class="btn btn-primary">
+            Bizi Arayın
+          </a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ================= END ABOUT ================= -->
+
+<!-- Scripts -->
+
+<script src="js/jquery-3.6.0.min.js"></script>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<script src="js/owl.carousel.min.js"></script>
+
+<script>
+  if ($.fn.owlCarousel) {
+    $('.owl-single').owlCarousel({
+      items: 1,
+      loop: true,
+      autoplay: true,
+      smartSpeed: 800,
+      dots: true,
+      nav: false
+    });
+  }
+</script>
+
 	<div class="py-5 cta-fixed">
 		<div class="container">
 			<div class="row text-center">
@@ -282,103 +410,56 @@ html, body {
 		</div>
 		</div>
 	
-					<div class="untree_co-section">
-		<div class="container">
-			<div class="row mb-5 justify-content-center">
-				<div class="col-lg-6 text-center">
-					<h1 class="section-title text-left mb-4">Kurumsal</h1>
-					<p>
-Atölyemiz bireysel ve kurumsal silah kullanıcıları için tamir, bakım ve modifikasyon hizmetleri vermektedir. <p>
-STA, güvenlik ve performansı arttırıcı çözümler ve kişiselleştirme hizmetleri sunarak siz müşterilerimizin beklentilerini karşılayıcı çözümler sunmaktadır. <p>
-Atölyemiz, Emniyet Genel Müdürlüğü tarafından verilen “Silah Tamir ve İşletmecilik İzni” ruhsatına sahiptir.<p> Silah satışımız yoktur, yasa gereği ruhsatsız silahlara hizmet veremiyoruz.
- </p>
-				</p></p></p></div>
-			</div>
-				</div>
-			</div>
-		
-	
-	
-	<div class="untree_co-section">
-		<div class="container">
-			<div class="row justify-content-between align-items-center">
-				<div class="col-lg-6">
-  <figure class="img-play-video">
+   
+  
 
-    <video
-      src="videos/video2.mp4"
-      class="img-fluid rounded-20"
-      autoplay
-      muted
-      loop
-      playsinline
-      controls
-    ></video>
 
-  </figure>
-</div>
+          
 
-				
-				<div class="col-lg-5">
-					<h2 class="section-title.sm text-left mb-4">
-  Neler Yapıyoruz?
-</h2>
-					<p>Silah Tamir Atölyesi, tabanca, tüfek ve bıçak gibi silahlarınızı; estetik, güvenlik, işlevsellik ve dayanıklılık anlamında geliştiriyor. Kültürümüzde önemli bir yere sahip olan silahlara özenli dokunuşlarla teknik destek ve kişiselleştirme olanağı sağlıyor.</p>
+		  
 
-					<p class="mb-4">Bize ulaşarak silahlarınız ve diğer güvenlik ekipmanlarınız için teknik destek alabilirsiniz.</p>
+       
+	<section class="reference-band">
+  <div class="container text-center">
 
-					<ul class="list-unstyled two-col clearfix">
-						<li>Krom kaplama</li>
-						<li>Cerakote kaplama</li>
-						<li>Lazer gravür ve logo</li>
-						<li>Sürgü ve gövde modifikasyonları</li>
-						<li>Bakım ve onarım</li>
-						
-					</ul>
+    <!-- BAŞLIK -->
+    <h2 class="reference-title">Referanslar</h2>
 
-					<p><a href="about.html" class="btn btn-primary">Detaylı Bilgi</a></p>
+    <!-- REFERANSLAR -->
+    <div class="reference-wrapper">
 
-					
-				</div>
-			</div>
-		</div>
-	</div>
-		
-<style>
-	/* Neler Yapıyoruz? bölümü üstü ayarlama - desktop ve mobil uyumlu */
-@media (min-width: 992px) { /* desktop */
-  .untree_co-section:nth-of-type(2) .col-lg-5 {
-    margin-top: -110px; /* yaklaşık 2-3 cm yukarı kaydırır */
-  }
-}
+      <div class="reference-item active">
+        <img src="images/person_2.png" alt="Tunç Kaya">
+        <h3>Tunç Kaya</h3>
+        <span class="reference-role">Bireysel Müşteri</span>
+        <p>
+          “Silahım için teknik desteği, güler yüzlü ve dostane iletişimle sağladım.”
+        </p>
+      </div>
 
-@media (max-width: 991px) { /* tablet ve mobil */
-  .untree_co-section:nth-of-type(2) .col-lg-5 {
-    margin-top: -20px; /* mobilde aşırı yukarı gitmesin */
-  }
-}
+      <div class="reference-item">
+        <img src="images/person_2.png" alt="Ahmet Demir">
+        <h3>Ahmet Demir</h3>
+        <span class="reference-role">Bireysel Müşteri</span>
+        <p>
+          “STA ile çalışmak gerçekten güven verdi.”
+        </p>
+      </div>
 
-	/* Neler Yapıyoruz başlığını yukarı kaydır */
-.untree_co-section:nth-of-type(2) .col-lg-5 {
-    margin-top: -30px; /* 30px yukarı kaydır, istersen 50px de yapabilirsin */
-}
+      <div class="reference-item">
+        <img src="images/person_2.png" alt="Deniz Geçer">
+        <h3>Deniz Geçer</h3>
+        <span class="reference-role">Bireysel Müşteri</span>
+        <p>
+          “İşçilik ve iletişim kusursuzdu.”
+        </p>
+      </div>
 
-/* Sadece 1. ve 2. section arası boşluğu azalt */
-.untree_co-section:first-of-type {
-  margin-bottom: 10px !important;
-}
-.untree_co-section:first-of-type + .untree_co-section {
-  margin-top: 10px !important;
-}
-	/* 2. section row’sunu yukarı hizala */
-.untree_co-section:nth-of-type(2) .row {
-    align-items: flex-start; /* ortadan yukarıya hizala */
-}
+    </div>
+  </div>
+</section>
 
-</style>
 
-	
-	
 	<div class="py-5 cta-fixed">
 		<div class="container">
 			<div class="row text-center">
@@ -471,46 +552,108 @@ Atölyemiz, Emniyet Genel Müdürlüğü tarafından verilen “Silah Tamir ve �
       <span class="sr-only">Loading...</span>
     </div>
   </div>
-	<script src="js/jquery-3.4.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.animateNumber.min.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/jquery.fancybox.min.js"></script>
-	<script src="js/aos.js"></script>
-	<script src="js/moment.min.js"></script>
-	<script src="js/daterangepicker.js"></script>
 
-	<script src="js/typed.js"></script>
-	<script>
-		$(function() {
-			var slides = $('.slides'),
-			images = slides.find('img');
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/moment.min.js"></script>
+  
+	<!-- <script src="js/typed.js"></script> -->
+<!-- <script src="js/daterangepicker.js"></script> -->
 
-			images.each(function(i) {
-				$(this).attr('data-id', i + 1);
-			})
+  
+  
+  <script src="js/custom.js"></script>
 
-			var typed = new Typed('.typed-words', {
-				strings: ["Yetkin Bir Dokunuş..."," Profesyonel Bakım ve Onarım"," Üst Düzey Yenileme", " Silah Tamir Atölyesi", ],
-				typeSpeed: 80,
-				backSpeed: 80,
-				backDelay: 4000,
-				startDelay: 1000,
-				loop: true,
-				showCursor: true,
-				preStringTyped: (arrayPos, self) => {
-					arrayPos++;
-					console.log(arrayPos);
-					$('.slides img').removeClass('active');
-					$('.slides img[data-id="'+arrayPos+'"]').addClass('active');
-				}
+<script>
+	<script src="js/custom.js"></script>
+	
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
-			});
-		})
-		
-	</script>
+  console.log('burger js çalıştı');
+
+  const burger = document.getElementById('burger-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  if (!burger || !mobileMenu) return; // ekstra güvenlik
+
+  burger.addEventListener('click', function (e) {
+    e.stopPropagation();
+    mobileMenu.classList.toggle('show');
+  });
+
+  document.addEventListener('click', function (e) {
+    if (!mobileMenu.contains(e.target) && !burger.contains(e.target)) {
+      mobileMenu.classList.remove('show');
+    }
+  });
+
+});
+	
+document.addEventListener("DOMContentLoaded", function() {
+  const cta = document.querySelector('.cta-fixed');
+  if(cta) {
+    cta.style.height = 'auto';      // sabit height varsa kaldır
+    cta.style.paddingTop = '10px';  // bant üst boşluğu
+    cta.style.paddingBottom = '10px'; // bant alt boşluğu
+  }
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const items = document.querySelectorAll(".reference-item");
+  let index = 0;
+
+  setInterval(() => {
+    items[index].classList.remove("active");
+    index = (index + 1) % items.length;
+    items[index].classList.add("active");
+  }, 6000); // 4 saniye
+});
+
+
+
+  const track = document.querySelector('.reference-track');
+  track.innerHTML += track.innerHTML; // sonsuz döngü hissi
+
+
+</script>
+	  <style>
+	.service-item {
+  margin-bottom: 20px;
+}
+
+.service-item p {
+  margin: 0;
+  line-height: 1.6;
+}
+		  .service-list {
+  padding-left: 20px; /* madde imleri görünür */
+}
+
+.service-list li {
+  margin-bottom: 18px;
+}
+
+.service-list li strong {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.service-list li p {
+  margin: 0;
+  line-height: 1.6;
+}
+/* ===== SLIDER HEIGHT FIX ===== */
+
+</style>
 	<script>
 	$(document).ready(function () {
   $('.site-mobile-menu-body').append(`
@@ -537,12 +680,18 @@ Atölyemiz, Emniyet Genel Müdürlüğü tarafından verilen “Silah Tamir ve �
 
 });
 
+$(document).ready(function () {
+  $('.owl-carousel').owlCarousel({
+    items: 1,
+    loop: true,
+    nav: true,
+    dots: true
+  });
+});
+		
 </script>
 
-	<script src="js/custom.js"></script>
-<style>
 
-</style>
+</body>
 
-
-</body></html>
+</html>

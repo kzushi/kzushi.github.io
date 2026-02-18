@@ -1,5 +1,4 @@
 
-
 <!doctype html>
 <html lang="tr">
 <head>
@@ -22,7 +21,7 @@
 
 <!-- Plugin CSS -->
 <link rel="stylesheet" href="css/owl.carousel.min.css">
-<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="owl.theme.default.min.css">
 <link rel="stylesheet" href="css/jquery.fancybox.min.css">
 <link rel="stylesheet" href="css/daterangepicker.css">
 <link rel="stylesheet" href="css/aos.css">
@@ -30,9 +29,9 @@
 <!-- Icon Fonts -->
 <link rel="stylesheet" href="fonts/icomoon/style.css">
 <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-<!-- favicon -->
+<link rel="stylesheet" href="ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<!-- favicon -->
 	<link rel="icon" type="image/x-icon" href="/favicon.ico">
 
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -51,10 +50,9 @@
   <title>Silah tamir atölyesi</title>
 </head>
 
+<body>
 <style>
 	
-
-
 /* =====================================
    GLOBAL FIX
 ===================================== */
@@ -152,19 +150,9 @@ html, body {
 
 }
 
+
 </style>
-
-
-
-
-
-
-
-
-
-
-<body>
-
+	
   <div class="site-mobile-menu site-navbar-target">
     <div class="site-mobile-menu-header">
       <div class="site-mobile-menu-close">
@@ -189,15 +177,18 @@ html, body {
   <div class="nav-right d-flex align-items-center ml-auto">
 
     <!-- Menü -->
+	  
+	  
+    <!-- Menü -->
     <ul class="js-clone-nav site-menu mb-0">
-  <li class="active"><a href="index.html">ANA SAYFA</a></li>
-  <li><a href="about.html">HAKKIMIZDA</a></li>
+  <li><a href="index.html">ANA SAYFA</a></li>
+ <li> <a href="about.html">HAKKIMIZDA</a></li>
   <li><a href="galeri.html">HİZMET GALERİSİ</a></li>
-  <li><a href="blog.html">BLOG</a></li>
+  <li class="active"><a href="blog.html">BLOG</a></li>
   <li><a href="iletisim.html">İLETİŞİM</a></li>
 </ul>
 
-    <!-- Sosyal ikonlar -->
+  <!-- Sosyal ikonlar -->
         <div class="header-social d-none d-lg-flex ml-4">
           <a href="https://www.instagram.com/stasilahtamiratolyesi" target="_blank">
             <i class="fab fa-instagram"></i>
@@ -206,180 +197,135 @@ html, body {
             <i class="fab fa-youtube"></i>
           </a>
         </div>
-
     <!-- Hamburger -->
     <a href="#" class="burger d-inline-block d-lg-none site-menu-toggle js-menu-toggle">
       <span></span>
     </a>
-
   </div>
 </div>
 
 	</div>
 	</nav>
+	 
 
-<!-- HERO -->
-<div class="hero" style="padding-top:20px;">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-7">
-        <div class="intro-wrap">
-          <h1 class="mb-5">
-            <span class="d-block">Silahlarınıza…</span>
-            <span class="typed-words"></span>
-          </h1>
-        </div>
-      </div>
-      <div class="col-lg-5">
-        <div class="slides video-slide">
-          <video id="heroVideo" src="videos/video1.mp4" autoplay muted loop playsinline></video>
+  <div class="hero hero-inner">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mx-auto text-center">
+          <div class="intro-wrap">
+            <h1 class="mb-0">Blog</h1><br><br>
+            <p class="text-white">Silahların bakımı, temizliği, kullanımı ile ilgili önemli detaylara ve silah markalarına özel bilgilendirmelere bloğumuzdan sahip olabilirsiniz. </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-	<style>
-	/* HERO STICKY OFFSET */
-.hero {
-  margin-top: 90px;   /* Desktop navbar yüksekliği kadar */
+<style>
+	/* =========================
+   VIDEO – GLOBAL TEMİZ YAPI
+========================= */
+
+/* Video kapsayıcı */
+.video-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;   /* ortala */
 }
+
+/* Video element */
+.video-wrap video {
+  width: 100%;
+  max-width: 460px;          /* desktop kontrollü genişlik */
+  height: auto;
+  display: block;
+  border-radius: 20px;
+}
+
+/* Bronz çerçeve */
+.video-bronze-frame {
+  border: 1px solid rgba(200, 155, 106, 0.65);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.55);
+}
+
+
+/* =========================
+   TABLET
+========================= */
 
 @media (max-width: 991px) {
-  .hero {
-    margin-top: 70px;   /* Mobil navbar yüksekliği kadar */
-  }
-}
-	</style>
-  <script>
-          document.addEventListener('DOMContentLoaded', function () {
-            const video = document.getElementById('heroVideo');
-            function enableSound() {
-              video.muted = false;
-              video.play().catch(() => {});
-              document.removeEventListener('click', enableSound);
-              document.removeEventListener('touchstart', enableSound);
-            }
-            document.addEventListener('click', enableSound);
-            document.addEventListener('touchstart', enableSound);
-          });
-          </script>
-<script src="js/jquery.min.js"></script>
-
-
-
-
-
-
-
-	
-	<div class="py-5 cta-fixed">
-		<div class="container">
-			<div class="row text-center">
-				<div class="col-md-12">
-					
-						</div>
-			</div>
-		</div>
-		</div>
-	
-					<div class="untree_co-section">
-		<div class="container">
-			<div class="row mb-5 justify-content-center">
-				<div class="col-lg-6 text-center">
-					<h1 class="section-title text-left mb-4">Kurumsal</h1>
-					<p>
-Atölyemiz bireysel ve kurumsal silah kullanıcıları için tamir, bakım ve modifikasyon hizmetleri vermektedir. <p>
-STA, güvenlik ve performansı arttırıcı çözümler ve kişiselleştirme hizmetleri sunarak siz müşterilerimizin beklentilerini karşılayıcı çözümler sunmaktadır. <p>
-Atölyemiz, Emniyet Genel Müdürlüğü tarafından verilen “Silah Tamir ve İşletmecilik İzni” ruhsatına sahiptir.<p> Silah satışımız yoktur, yasa gereği ruhsatsız silahlara hizmet veremiyoruz.
- </p>
-				</p></p></p></div>
-			</div>
-				</div>
-			</div>
-		
-	
-	
-	<div class="untree_co-section">
-		<div class="container">
-			<div class="row justify-content-between align-items-center">
-				<div class="col-lg-6">
-  <figure class="img-play-video">
-
-    <video
-      src="videos/video2.mp4"
-      class="img-fluid rounded-20"
-      autoplay
-      muted
-      loop
-      playsinline
-      controls
-    ></video>
-
-  </figure>
-</div>
-
-				
-				<div class="col-lg-5">
-					<h2 class="section-title.sm text-left mb-4">
-  Neler Yapıyoruz?
-</h2>
-					<p>Silah Tamir Atölyesi, tabanca, tüfek ve bıçak gibi silahlarınızı; estetik, güvenlik, işlevsellik ve dayanıklılık anlamında geliştiriyor. Kültürümüzde önemli bir yere sahip olan silahlara özenli dokunuşlarla teknik destek ve kişiselleştirme olanağı sağlıyor.</p>
-
-					<p class="mb-4">Bize ulaşarak silahlarınız ve diğer güvenlik ekipmanlarınız için teknik destek alabilirsiniz.</p>
-
-					<ul class="list-unstyled two-col clearfix">
-						<li>Krom kaplama</li>
-						<li>Cerakote kaplama</li>
-						<li>Lazer gravür ve logo</li>
-						<li>Sürgü ve gövde modifikasyonları</li>
-						<li>Bakım ve onarım</li>
-						
-					</ul>
-
-					<p><a href="about.html" class="btn btn-primary">Detaylı Bilgi</a></p>
-
-					
-				</div>
-			</div>
-		</div>
-	</div>
-		
-<style>
-	/* Neler Yapıyoruz? bölümü üstü ayarlama - desktop ve mobil uyumlu */
-@media (min-width: 992px) { /* desktop */
-  .untree_co-section:nth-of-type(2) .col-lg-5 {
-    margin-top: -110px; /* yaklaşık 2-3 cm yukarı kaydırır */
+  .video-wrap video {
+    max-width: 420px;
   }
 }
 
-@media (max-width: 991px) { /* tablet ve mobil */
-  .untree_co-section:nth-of-type(2) .col-lg-5 {
-    margin-top: -20px; /* mobilde aşırı yukarı gitmesin */
+
+/* =========================
+   MOBİL
+========================= */
+
+@media (max-width: 768px) {
+
+  .video-wrap {
+    margin-bottom: 30px;  /* yazıdan önce boşluk */
   }
-}
 
-	/* Neler Yapıyoruz başlığını yukarı kaydır */
-.untree_co-section:nth-of-type(2) .col-lg-5 {
-    margin-top: -30px; /* 30px yukarı kaydır, istersen 50px de yapabilirsin */
-}
+  .video-wrap video {
+    max-width: 320px;     /* mobilde daha küçük */
+  }
 
-/* Sadece 1. ve 2. section arası boşluğu azalt */
-.untree_co-section:first-of-type {
-  margin-bottom: 10px !important;
-}
-.untree_co-section:first-of-type + .untree_co-section {
-  margin-top: 10px !important;
-}
-	/* 2. section row’sunu yukarı hizala */
-.untree_co-section:nth-of-type(2) .row {
-    align-items: flex-start; /* ortadan yukarıya hizala */
 }
 
 </style>
+  
+<div class="untree_co-section">
+  <div class="container">
+    <div class="row align-items-start">
 
-	
-	
-	<div class="py-5 cta-fixed">
+      <!-- VIDEO -->
+      <div class="col-lg-6">
+       
+<div class="video-wrap">
+  <video
+    src="videos/video3.mp4"
+    class="video-bronze-frame"
+    autoplay
+    muted
+    loop
+    playsinline
+    controls
+  ></video>
+</div>
+		  </div>
+
+      <!-- YAZI -->
+      <div class="col-lg-6 pl-lg-4">
+        <h2 class="section-title sm text-left mb-4">
+          Silah Bakım Ve Temizliği Nasıl Yapılır?
+        </h2>
+
+        <p>
+          Silah bakımı ve temizliği, silahınızın kullanım süresini uzatan ve performansının uzun süre korunmasını sağlayan önemli işlemlerdir. Sahra temizliğinin haricinde yılda bir kez bir silah uzmanına detayli bakım ve temizlik yaptırmanızı tavsiye ederiz.
+        </p>
+
+        <p>
+          Yıllık silah bakımı, silahınızın tüm parçaları sökülerek kontrol ve temizliğinin yapılması işlemleridir. Silahınızın güvenirliğini ve dayanıklılığını arttırmak için son derece önemlidir. 
+        </p>
+
+        <p>
+          Silahınızın tüm bileşenleri söküldükten sonra uygun temizleme solüsyonları ve yağlarla yapılır. Bu arada yapılan incelemelerde değişim veya tamir gerektiren parçalar tespit edilir ve sorun varsa gereği yapılır. Silah temizlik ve bakımına şarjör de dahildir. Maalesef bir çok kullanıcı şarjörlerine gerekli özeni göstermemektedir. Meydana gelen bir çok tutukluk sebeblerinden birisi de şarjör hatalarından kaynaklanır. Silahınıza bakım yaparken şarjörlerinizi ihmal etmeyin. 
+        </p>
+
+        <p>
+          Bütün bu işlemlerden sonra silahınız test atışına tabi tutulur ve teslim edilir. Silahınızın kullanım sıklığına, çevresel koşullara ve depolama şartlarına göre yıllık bakım sıklığı değişkenlik gösterebilir. Düzenli olarak silahınızı temizlemek ve bakım yapmak hem güvenli kullanım sağlar hem de silahınızın ömrünü uzatır. 
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+		  
+  <div class="py-5 cta-fixed">
 		<div class="container">
 			<div class="row text-center">
 				<div class="col-md-12">
@@ -396,6 +342,7 @@ Atölyemiz, Emniyet Genel Müdürlüğü tarafından verilen “Silah Tamir ve �
 			</div>
 		</div>
 	</div>
+
 
 
   <div class="site-footer">
@@ -471,46 +418,115 @@ Atölyemiz, Emniyet Genel Müdürlüğü tarafından verilen “Silah Tamir ve �
       <span class="sr-only">Loading...</span>
     </div>
   </div>
-	<script src="js/jquery-3.4.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.animateNumber.min.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/jquery.fancybox.min.js"></script>
-	<script src="js/aos.js"></script>
-	<script src="js/moment.min.js"></script>
-	<script src="js/daterangepicker.js"></script>
 
-	<script src="js/typed.js"></script>
-	<script>
-		$(function() {
-			var slides = $('.slides'),
-			images = slides.find('img');
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/moment.min.js"></script>
+  <script src="js/daterangepicker.js"></script>
 
-			images.each(function(i) {
-				$(this).attr('data-id', i + 1);
-			})
+  <script src="js/typed.js"></script>
+  
+  <script src="js/custom.js"></script>
 
-			var typed = new Typed('.typed-words', {
-				strings: ["Yetkin Bir Dokunuş..."," Profesyonel Bakım ve Onarım"," Üst Düzey Yenileme", " Silah Tamir Atölyesi", ],
-				typeSpeed: 80,
-				backSpeed: 80,
-				backDelay: 4000,
-				startDelay: 1000,
-				loop: true,
-				showCursor: true,
-				preStringTyped: (arrayPos, self) => {
-					arrayPos++;
-					console.log(arrayPos);
-					$('.slides img').removeClass('active');
-					$('.slides img[data-id="'+arrayPos+'"]').addClass('active');
-				}
+<script>
+	<script src="js/custom.js"></script>
+	
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
-			});
-		})
-		
-	</script>
+  console.log('burger js çalıştı');
+
+  const burger = document.getElementById('burger-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  if (!burger || !mobileMenu) return; // ekstra güvenlik
+
+  burger.addEventListener('click', function (e) {
+    e.stopPropagation();
+    mobileMenu.classList.toggle('show');
+  });
+
+  document.addEventListener('click', function (e) {
+    if (!mobileMenu.contains(e.target) && !burger.contains(e.target)) {
+      mobileMenu.classList.remove('show');
+    }
+  });
+
+});
+	
+</script>
+	<style>
+
+/* Masaüstü */
+		/* ===== SLIDER HEIGHT FIX ===== */
+
+/* Desktop / Tablet */
+.owl-single {
+  height: 650px;
+}
+
+.owl-single .owl-stage-outer,
+.owl-single .owl-stage,
+.owl-single .owl-item {
+  height: 100%;
+}
+
+.owl-single img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Mobile reset */
+@media (max-width: 768px) {
+  .owl-single {
+    height: auto;
+  }
+
+  .owl-single .owl-stage-outer,
+  .owl-single .owl-stage,
+  .owl-single .owl-item {
+    height: auto;
+  }
+
+  .owl-single img {
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+
+.owl-single .owl-stage-outer,
+.owl-single .owl-stage,
+.owl-single .owl-item {
+  height: 100%;
+}
+
+/* Resmi alana yay */
+.owl-single img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.untree_co-section p,
+.untree_co-section li {
+  font-size: 15px;   /* 16 → 17 / 18 deneyebilirsin */
+  line-height: 1.75;
+}
+.hero .intro-wrap p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+/*
+/* 
+		</style>
+	
 	<script>
 	$(document).ready(function () {
   $('.site-mobile-menu-body').append(`
@@ -538,11 +554,6 @@ Atölyemiz, Emniyet Genel Müdürlüğü tarafından verilen “Silah Tamir ve �
 });
 
 </script>
+</body>
 
-	<script src="js/custom.js"></script>
-<style>
-
-</style>
-
-
-</body></html>
+</html>
